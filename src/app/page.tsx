@@ -1,10 +1,11 @@
 import Hero from "./Hero";
+import About from "@/components/About";
 
 export default function Page() {
   return (
     <>
       <Hero />
-      {/* TODO: Add Timeline, Skills, Projects sections */}
+      <About />
     </>
   );
 }
