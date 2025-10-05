@@ -1,4 +1,5 @@
 import { heroContent } from "@/data/hero-content";
+import Button from "@/components/ui/Button";
 
 export default function Hero(): React.JSX.Element {
   return (
@@ -19,12 +20,13 @@ export default function Hero(): React.JSX.Element {
           {heroContent.description}
         </p>
         
-        <a
+        <Button
+          variant="primary"
+          size="lg"
           href={heroContent.cta.href}
-          className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-3 text-lg font-medium text-white transition-colors duration-200 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-500 dark:hover:bg-blue-600"
         >
           {heroContent.cta.text}
-        </a>
+        </Button>
       </div>
     </section>
   );
